@@ -1,0 +1,32 @@
+<div class="modal-header">
+  <h4 class="titleDeposit" id="modal-basic-title" let name = name>Depositar para:  </h4><p class="user">{{name}}</p>
+  <button type="button" class="close" aria-label="Close" (click)="closeModalDeposit()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body text-center">
+      <label class="entBalance">Saldo atual: </label>
+      <p class="balanceToday" let balance = balance>R$ {{balance}}</p>
+</div>
+<div class="form-group">
+  <div class="input-group text-center">
+    <div class="mx-auto mb-3">
+      <label>Depositar: </label>
+      <input
+        id="name"
+        type="number"
+        class="form-control"
+        [(ngModel)]="deposit"
+      />
+    </div>
+  </div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="closeModalDeposit()">
+    Cancelar
+  </button>
+  <button type="button" class="btn btn-success" (click)="depositOnClient(name, balance, email, deposit)">
+    Depositar
+  </button>
+</div>
+  
+

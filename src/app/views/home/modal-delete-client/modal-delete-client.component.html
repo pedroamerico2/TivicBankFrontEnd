@@ -1,0 +1,15 @@
+<div class="modal-header">
+    <h5 class="deleteHeader" id="exampleModalCenterTitle">Deletar Usuario</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body text-center">
+    <i class="material-icons closeIcon">close</i>
+    <h2>Deseja realmente deletar o usuario ?</h2>
+    <p>Essa acao nao pode ser desfeita</p>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" data-dismiss="modal" (click)="closeModal()">Close</button>
+    <button type="button" class="btn btn-danger" (click)="deleteClient(name)">Deletar</button>
+</div>

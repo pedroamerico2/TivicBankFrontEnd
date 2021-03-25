@@ -1,0 +1,21 @@
+.balanceToday {
+  color: green;
+  font-weight: bold;
+  font-size: 40px;
+}
+.entBalance {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.user {
+  font-size: 15px;
+  color: green;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.titleDeposit {
+  font-size: 20px;
+  font-weight: bold;
+}

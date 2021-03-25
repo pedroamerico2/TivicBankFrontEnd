@@ -1,0 +1,48 @@
+<div class="text-center">
+  <button class="text-center" mat-stroked-button color="primary" (click)="openModalAdd()">
+    <i class="material-icons">person_add</i>
+  </button>
+</div>
+<mat-tab-group style="padding: 40px">
+  <mat-tab label="Clientes">
+    <div fxLayout="row" fxLayoutAlign="space-evenly center" style="padding: 2%">
+      <div style="margin: 0.5%">
+        <Table class="table table-hover text-center">
+          <thead>
+            <tr>
+              <th width="40%"scope="col">Cliente</th>
+              <th width="35%"scope="col">Email</th>
+              <th width="25%">Acoes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let u of users" style="height: 54px">
+              <td width="40%">
+                {{ u.name }}
+              </td>
+              <td width="35%">
+                {{ u.email }}
+              </td>
+              <td width="25%">
+                <button class="btn btn-success mx-2" (click)="openWhithDrawClient(u.balance, u.name, u.email)">
+                  <i class="material-icons" style="color: white">receipt</i>
+                </button>
+                <button class="btn btn-warning mx-2" (click)="openDepositClient(u.balance, u.name, u.email)">
+                  <i class="material-icons" style="color: white">paid</i>
+                </button>
+                <button class="btn btn-info mx-2" (click)="openModalBalance(u.balance, u.name)">
+                  <i class="material-icons" style="color: white">
+                    attach_money
+                  </i>
+                </button>
+                <button class="btn btn-danger mx-2" (click)="openModalDelete(u.name)">
+                  <i class="material-icons" style="color: white"> delete </i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>

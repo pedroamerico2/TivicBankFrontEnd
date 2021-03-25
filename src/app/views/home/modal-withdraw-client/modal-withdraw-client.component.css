@@ -1,0 +1,21 @@
+.titleWithdraw {
+  font-weight: bold;
+  font-size: 20px;
+}
+.balanceToday {
+  color: green;
+  font-weight: bold;
+  font-size: 40px;
+}
+.entBalance {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.user {
+  font-size: 15px;
+  color: green;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-left: 1%;
+}
