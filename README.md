@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
+DESAFIO TÉCNICO - TIVIC
+O Banco TIVIC necessita criar uma API Rest para expor os seguintes serviços para seus clientes:
+    1) Serviço para verificar o saldo de uma conta corrente;
+    2) Serviço para realizar um depósito em uma determinada conta corrente;
+    3) Serviço para realizar um saque de uma determinada conta corrente.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
